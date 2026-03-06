@@ -8,11 +8,11 @@ Make debugging easy by logging:
 - error messages and status codes
 - timestamps and durations
 
-##Where to log
-  Google Sheets (easy)
-  Notion (human-friendly)
-  DB (best)
-  Slack/Discord (alerts)
+## Where to log
+- Google Sheets (easy)
+- Notion (human-friendly)
+- DB (best)
+- Slack/Discord (alerts)
 
 ## Minimal log schema
 ```json
