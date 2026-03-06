@@ -1,6 +1,6 @@
 # n8n Automation Patterns — Ongoing
 
-A collection of **reusable n8n workflow patterns** used to build reliable automation systems with API integrations.
+A library of reusable automation architecture patterns for building scalable n8n workflows.
 
 This repository acts as a **toolkit of automation building blocks** that can be reused across projects.
 Patterns are designed to be small, composable, and easy to adapt into new workflows.
