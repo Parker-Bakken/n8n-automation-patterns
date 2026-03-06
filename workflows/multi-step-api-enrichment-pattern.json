@@ -1,0 +1,59 @@
+{
+  "name": "Multi-Step API Enrichment Pattern",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manualTrigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [180, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.example.com/source",
+        "responseFormat": "json"
+      },
+      "id": "fetchSource",
+      "name": "Fetch Source Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [400, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.example.com/enrich",
+        "responseFormat": "json"
+      },
+      "id": "enrichData",
+      "name": "Enrich Data",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [640, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Fetch Source Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Source Data": {
+      "main": [
+        [
+          {
+            "node": "Enrich Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
