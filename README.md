@@ -4,6 +4,7 @@ A library of reusable automation architecture patterns for building scalable n8n
 
 This repository acts as a **toolkit of automation building blocks** that can be reused across projects.
 Patterns are designed to be small, composable, and easy to adapt into new workflows.
+This repository contains reusable n8n workflow patterns for building scalable automation systems, including routing, retries, validation, scheduling, API chaining, and AI-content automation.
 
 **Status:** 🚧 Ongoing / Actively Expanding
 
@@ -83,15 +84,27 @@ These patterns are useful when building systems such as:
 
 ## Example Workflows
 
-This repository includes reusable automation patterns you can import directly into n8n.
+This repository includes reusable n8n workflow patterns that can be imported and adapted for real automation systems.
 
 | Pattern | Description |
-|-------|--------|
-| api-retry-pattern | Fault tolerant API requests |
-| conditional-router-pattern | Branch logic and workflow routing |
-| webhook-to-api-pattern | Event-driven automation |
+|---|---|
+| api-retry-pattern | Retry-ready API request workflow |
+| conditional-router-pattern | Branching logic for workflow routing |
+| webhook-to-api-pattern | Webhook-triggered API automation |
+| scheduled-api-sync-pattern | Scheduled sync with an external API |
+| error-alert-pattern | Error simulation and alerting pattern |
+| webhook-validation-pattern | Webhook input validation before processing |
+| multi-step-api-enrichment-pattern | Multi-step API chaining and enrichment |
+| google-sheets-to-api-pattern | Read rows from Google Sheets and send to API |
+| ai-content-routing-pattern | Route AI/content jobs to different pipelines |
 
-Import any workflow by downloading the JSON file and selecting **Import Workflow** in n8n.
+## Importing Workflows
+
+1. Download any JSON file from the `workflows/` folder.
+2. Open n8n.
+3. Click **Import from File**.
+4. Select the workflow JSON.
+5. Update credentials, URLs, and node settings as needed.
 
 ---
 
