@@ -81,6 +81,18 @@ These patterns are useful when building systems such as:
 * background processing automations
 * scheduled data pipelines
 
+## Example Workflows
+
+This repository includes reusable automation patterns you can import directly into n8n.
+
+| Pattern | Description |
+|-------|--------|
+| api-retry-pattern | Fault tolerant API requests |
+| conditional-router-pattern | Branch logic and workflow routing |
+| webhook-to-api-pattern | Event-driven automation |
+
+Import any workflow by downloading the JSON file and selecting **Import Workflow** in n8n.
+
 ---
 
 ## Security
