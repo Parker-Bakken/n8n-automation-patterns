@@ -7,6 +7,8 @@ Patterns are designed to be small, composable, and easy to adapt into new workfl
 
 **Status:** 🚧 Ongoing / Actively Expanding
 
+📐 Architecture: [docs/architecture.md](docs/architecture.md)
+
 ---
 
 ## Purpose
