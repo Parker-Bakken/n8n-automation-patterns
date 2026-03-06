@@ -1,0 +1,40 @@
+{
+  "name": "Webhook to API Pattern",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "webhook-example",
+        "httpMethod": "POST"
+      },
+      "id": "webhook",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.example.com/process",
+        "responseFormat": "json"
+      },
+      "id": "httpRequest",
+      "name": "Send to API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [400, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Send to API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
