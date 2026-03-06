@@ -31,6 +31,15 @@ Patterns for:
 * rate limiting and batching
 * scheduling and queue-style workflows
 
+## Automation Patterns Included
+
+- API Integration Pattern
+- Conditional Routing Pattern
+- Error Handling & Retry Pattern
+- Scheduled Workflow Pattern
+- Data Transformation Pattern
+- Notification & Alert Pattern
+
 ---
 
 ## Repository Structure
