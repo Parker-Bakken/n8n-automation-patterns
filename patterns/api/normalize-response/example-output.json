@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "status": 200,
+  "data": {
+    "job_id": "abc123",
+    "final_video_url": "https://example.com/video.mp4"
+  },
+  "error": null,
+  "meta": {
+    "provider": "render-api",
+    "duration_ms": 8421
+  }
+}
